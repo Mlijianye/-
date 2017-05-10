@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>照片上传</title>
+</head>
+<body>
+	<form name="form1" action="a.html" method="post">
+	请上传你的照片:<input type="file" name="pic"><p id="msg"></p></br>
+	<input type="submit" name="sub">
+	</form>
+	<script>
+	var m=false;
+	document.form1.pic.onchange=function(){
+		var types=["image/png","image/jpeg"]
+		if(this.files[0].size<=(1024*1024)){
+			for(var i=0;i<types.length;i++){
+				if(this.files[0].type==types[i]){
+					m=true;
+				}
+			}
+			if(m){
+				document.getElementById("msg").innerHTML="文件符合";
+			}else{
+				document.getElementById("msg").innerHTML="文件格式不符合条件";
+			}
+			
+		}else{
+			document.getElementById("msg").innerHTML="文件太大,不符合条件";
+		}
+	}
+	</script>	
+</body>
+</html>

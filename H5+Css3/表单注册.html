@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<form action="a.html" name="form1">
+		用户名:<input type="text" pattern="^\w{8}$"><br>
+		密码:<input type="password" required>
+		电话号码:<input type="text" pattern="^(13|15|17|18)[0-9]{9}"><br>
+		<input type="submit">
+		<input type="file" id="pic">
+		<input type="button" id="but">
+	</form>
+	<script>
+	var but=document.getElementById("but");
+	var pic=document.getElementById("pic");
+	document.form1.but.onclick=function(){
+		alert(document.form1.pic.files[0].size);
+	}
+	document.form1.ang.onchange=function(){
+		document.getElementById("ang").value=document.getElementById("r").value;
+	}
+	</script>
+</body>
+</html>

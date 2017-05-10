@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>画布</title>
+</head>
+<body>
+	<canvas width="400" height="300" id="cv" style="border:1px solid #f00"></canvas>
+	<script>
+	var canvas=document.getElementById("cv");
+	var ctx=canvas.getContext("2d");
+	ctx.strokeStyle="#f00";
+	ctx.strokeRect(80,30,250,250);
+	ctx.fillStyle="#f00";	
+	ctx.fillRect(80,30,250,250);
+	ctx.strokeStyle="#00f";
+	ctx.strokeRect(100,50,200,200);
+	ctx.fillStyle="#0f0";	
+	ctx.fillRect(100,50,200,200);
+	ctx.strokeStyle="#ff0";
+	ctx.strokeRect(120,70,160,160);
+	ctx.fillStyle="#ff0";
+	ctx.fillRect(120,70,160,160);
+	ctx.strokeStyle="#f0f";
+	ctx.strokeRect(140,90,120,120);
+	ctx.fillStyle="#f0f";
+	ctx.fillRect(140,90,120,120);
+	ctx.strokeStyle="#ff0";
+	ctx.strokeRect(160,110,80,80);
+	ctx.fillStyle="#ff0";
+	ctx.fillRect(160,110,80,80);
+	</script>
+</body>
+</html>

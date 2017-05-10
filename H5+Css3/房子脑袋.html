@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>椭圆矩形</title>
+</head>
+<body>
+	<canvas width="500" height="300" style="border:1px solid #f00;margin-left:500px;" id="aa" >		
+	</canvas>
+	<script>
+	var ctx=document.getElementById('aa');
+	var ctxs=ctx.getContext("2d");
+	ctxs.strokeStyle="#0f0";
+	ctxs.font="bold 40px 宋体";
+	ctxs.strokeText("李建业的房子",50,50);
+	ctxs.strokeStyle="#000";
+	ctxs.beginPath();
+	ctxs.moveTo(100,50);
+	ctxs.lineTo(0,100);
+	ctxs.lineTo(200,100);
+	ctxs.closePath();
+	ctxs.stroke();	
+	ctxs.strokeRect(20,100,160,100);
+	ctxs.strokeRect(30,120,40,30);
+	ctxs.strokeRect(120,120,40,30);
+	ctxs.moveTo(30,135);
+	ctxs.lineTo(30,135);
+	ctxs.lineTo(70,135);
+	ctxs.stroke();	
+	ctxs.moveTo(50,120);
+	ctxs.lineTo(50,120);
+	ctxs.lineTo(50,150);
+	ctxs.stroke();
+	ctxs.moveTo(140,120);
+	ctxs.lineTo(140,120);
+	ctxs.lineTo(140,150);
+	ctxs.stroke();	
+	ctxs.moveTo(120,135);
+	ctxs.lineTo(120,135);
+	ctxs.lineTo(160,135);
+	ctxs.stroke();
+	ctxs.beginPath();
+	ctxs.strokeStyle="#000";
+	ctxs.arc(100,200,40,0,Math.PI,true);
+	ctxs.closePath();
+	ctxs.stroke();
+	ctxs.beginPath();
+	ctxs.strokeStyle="#000";
+	ctxs.arc(350,100,60,0,Math.PI*2,true);
+	ctxs.closePath();
+	ctxs.stroke();
+	ctxs.moveTo(290,100);
+	ctxs.lineTo(290,100);
+	ctxs.lineTo(310,80);
+	ctxs.stroke();
+	ctxs.moveTo(310,80);
+	ctxs.lineTo(310,80);
+	ctxs.lineTo(310,90);
+	ctxs.stroke();
+	ctxs.moveTo(310,90);
+	ctxs.lineTo(310,90);
+	ctxs.lineTo(330,70);
+	ctxs.stroke();
+	ctxs.moveTo(330,70);
+	ctxs.lineTo(330,70);
+	ctxs.lineTo(330,85);
+	ctxs.stroke();
+	ctxs.moveTo(330,85);
+	ctxs.lineTo(330,85);
+	ctxs.lineTo(350,70);
+	ctxs.stroke();
+	ctxs.moveTo(350,70);
+	ctxs.lineTo(350,70);
+	ctxs.lineTo(350,85);
+	ctxs.stroke();
+	ctxs.moveTo(350,85);
+	ctxs.lineTo(350,85);
+	ctxs.lineTo(360,70);
+	ctxs.stroke();
+	ctxs.moveTo(360,70);
+	ctxs.lineTo(360,70);
+	ctxs.lineTo(360,85);
+	ctxs.lineTo(370,70);
+	ctxs.lineTo(370,85);
+	ctxs.lineTo(380,75);
+	ctxs.lineTo(380,85);
+	ctxs.lineTo(390,70);
+	ctxs.lineTo(390,85);
+	ctxs.lineTo(410,100);
+	ctxs.stroke();
+	ctxs.beginPath();
+	ctxs.strokeStyle="#000";
+	ctxs.arc(320,100,10,0,Math.PI,false);
+	ctxs.closePath();
+	ctxs.stroke();
+	ctxs.fill();
+	ctxs.beginPath();
+	ctxs.strokeStyle="#000";
+	ctxs.arc(370,100,10,0,Math.PI,false);
+	ctxs.closePath();
+	ctxs.stroke();
+	ctxs.fill();
+	ctxs.beginPath();
+	ctxs.moveTo(345,115);
+	ctxs.lineTo(335,125);
+	ctxs.lineTo(355,125);
+	ctxs.closePath();
+	ctxs.stroke();	
+    ctxs.strokeRect(330,135,30,10);
+
+
+	</script>
+</body>
+</html>

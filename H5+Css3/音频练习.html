@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>音乐</title>
+</head>
+<body>
+	<video src="b.mp3" width="500" height="50" controls  Autoplay id="aa">
+	</video>
+	<video controls="controls">
+		<source src="yy.mkv">
+	</video>
+
+<form name="form1">
+<input type="button" id="but" value="暂停">
+<input type="button" id="but1" value="播放">
+</form>
+<script>
+var bb=document.getElementById('aa');
+document.form1.but.onclick=function(){
+bb.pause();
+}
+document.form1.but1.onclick=function(){
+bb.play();
+}
+</script>
+</body>
+</html>

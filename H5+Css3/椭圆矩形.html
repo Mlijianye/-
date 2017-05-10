@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>椭圆矩形</title>
+</head>
+<body>
+	<canvas width="400" height="300" id="cc" style="border:1px solid #f00"></canvas>
+	<script>
+	var ctx=document.getElementById('cc');
+	var ctxs=ctx.getContext("2d");
+	ctxs.beginPath();
+	ctxs.moveTo(60,10);
+	ctxs.lineTo(260,10);
+	ctxs.arcTo(310,10,310,60,50);
+	ctxs.lineTo(310,160);
+	ctxs.arcTo(310,210,260,210,50);
+	ctxs.lineTo(60,210);
+	ctxs.arcTo(10,210,10,160,50);
+	ctxs.lineTo(10,60);
+	ctxs.arcTo(10,10,60,10,50);
+	ctxs.stroke(); 
+
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>按钮</title>
+</head>
+<body>
+	<canvas width="500" height="300" style="border:1px solid #f00" id="lne"></canvas>
+	<script>
+	var line=document.getElementById('lne');
+	var lines=line.getContext("2d");
+	 lines.lineWidth="24";
+	 lines.strokeStyle="#e00";
+	 lines.strokeRect(0,10,222,0);
+	 lines.strokeStyle="#e00";
+	 lines.strokeRect(10,10,0,62);
+	 lines.strokeStyle="#f00";
+	 lines.strokeRect(210,10,0,50);
+	 lines.strokeStyle="#f00";
+	 lines.strokeRect(10,60,212,0);
+	 lines.fillStyle="#ee0";
+	 lines.fillRect(10,10,200,50);
+
+	</script>
+</body>
+</html>

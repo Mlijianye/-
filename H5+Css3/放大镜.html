@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>画图</title>
+	<script type="text/javascript" src="jquery-1.6.4.min.js"></script>
+	<style>
+	div{
+		width:550px;
+		height:470px;
+		float:left;
+	}
+	</style>
+</head>
+<body>
+	<div id="pc"><img src="timg.jpg" style="width:500px;height:470px;float:left;" id="pics"></div>
+	<canvas id="pic" width="500" height="300" style="border:1px solid #f00;display:none;"></canvas>
+	<script>
+	
+	$(function(){
+		$("#pc").hover(function(){
+			$("#pic").show();
+			$("#pics").mousemove(function(e){
+		var inL=$("#pics").offset().left;
+		var inT=$("#pics").offset().top;
+		var xx = e.originalEvent.x-inL; 
+		var yy = e.originalEvent.y-inT;
+
+	var ctx=document.getElementById('pic');
+	var ctxs=ctx.getContext("2d");
+	var image=new Image();
+	image.src="timg.jpg";
+	image.onload=function(){
+		ctxs.drawImage(image,xx,yy,100,100,0,0,500,300);
+	}
+		})
+	},function(){
+		$("#pic").hide();
+	})
+		
+		
+	})	
+	</script>
+</body>
+</html>
